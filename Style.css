@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+h2 {
+  color: #444;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #222;
+  color: #fff;
+  padding: 80px 20px;
+}
+.hero-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.hero .btn {
+  background: #ff5e57;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.job, ul.tags li {
+  margin-bottom: 10px;
+}
+ul.tags {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+ul.tags li {
+  background: #e0e0e0;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 20px;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+form button {
+  background: #222;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
