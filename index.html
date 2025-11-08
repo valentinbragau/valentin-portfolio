@@ -5,32 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Valentin Brăgău | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <button id="darkModeToggle">🌓</button>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
-    <img src="assets/headshot.jpg" alt="Valentin Brăgău" class="hero-img">
+    <img src="assets/headshot.jpg" alt="Valentin Brăgău" class="hero-img" />
     <div class="hero-text">
       <h1>Valentin Brăgău</h1>
-      <p>He/Him · HR Specialist @ Swissôtel</p>
-      <p>Future People & Culture Leader | Change Maker</p>
+      <p class="tagline">He/Him · HR Specialist @ Swissôtel</p>
+      <p>Future People & Culture Leader · Change Maker</p>
       <a href="#contact" class="btn">Contact Me</a>
+      <a href="assets/CV_ValentinBragau.pdf" class="btn" download>Download CV</a>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="about" id="about">
-    <h2>About Me</h2>
-    <p>
-      People professional with a BSc in Business Administration, combining experience in operations, hospitality, and journalism. Currently pursuing an MSc in People, Organisations, and Change at RSM with a focus on HR Leadership & Change Management.
-      <br><br>
-      Driven by diversity & inclusion, accountability, and integrity. Known for adaptability, communication skills, and attention to detail. Passionate about creating positive workplace cultures and driving meaningful change.
-    </p>
+  <!-- About Section with Side-by-Side -->
+  <section class="about fade-in" id="about">
+    <div class="about-container">
+      <div class="about-img">
+        <img src="assets/workspace.jpg" alt="Workspace" />
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          People professional with a BSc in Business Administration, combining experience in operations, hospitality, and journalism.
+          Currently pursuing an MSc in People, Organisations, and Change at RSM. Passionate about driving impactful change, diversity, and people empowerment.
+        </p>
+        <p>
+          Experienced in Onboarding, L&D (Thesis Topic), Talent Management, Recruitment, People Analytics, and more. Known for integrity, adaptability, and results-driven leadership.
+        </p>
+      </div>
+    </div>
   </section>
 
-  <!-- Experience Section -->
-  <section class="experience" id="experience">
+  <!-- Experience -->
+  <section class="experience fade-in" id="experience">
     <h2>Experience</h2>
     <div class="job">
       <h3>HR Specialist – Swissôtel Amsterdam</h3>
@@ -38,7 +50,7 @@
     </div>
     <div class="job">
       <h3>Operations Manager & HR Support – Vegan Junk Food Bar</h3>
-      <p>Dec 2023 – April 2025</p>
+      <p>Dec 2023 – Apr 2025</p>
     </div>
     <div class="job">
       <h3>F&B Manager – Park Plaza</h3>
@@ -46,43 +58,35 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section class="projects" id="projects">
+  <!-- Projects -->
+  <section class="projects fade-in" id="projects">
     <h2>Projects</h2>
     <ul>
-      <li><strong>Organizational Diagnosis for ING:</strong> Analysis of agile team transition.</li>
-      <li><strong>REfine Circular Economy Startup:</strong> Pitched to investors with 9.6/10 result.</li>
-      <li><strong>Process Optimization – NHL Stenden:</strong> Increased application rate by 25%.</li>
+      <li><strong>REfine Circular Economy Startup</strong>: Developed a business & app based on circular economy. Pitched to investors with 9.6/10 result.</li>
+      <li><strong>ING Agile Teaming Advisory</strong>: Research-based analysis on ING's transition to self-managing agile teams.</li>
+      <li><strong>Organizational Behavior Redesign</strong>: Built a prototype platform to solve dissatisfaction at a recruitment agency using DBT.</li>
     </ul>
   </section>
 
-  <!-- Education Section -->
-  <section class="education" id="education">
-    <h2>Education</h2>
-    <p>MSc People, Organisations & Change – RSM (2025–2026)</p>
-    <p>BSc Business Administration – NHL Stenden (2019–2023)</p>
-    <p>Erasmus Minor – University of Valencia (2022)</p>
-  </section>
-
-  <!-- Skills Section -->
-  <section class="skills" id="skills">
+  <!-- Skills -->
+  <section class="skills fade-in" id="skills">
     <h2>Skills</h2>
     <ul class="tags">
       <li>People Analytics</li>
       <li>Change Management</li>
       <li>Strategic HR Leadership</li>
       <li>Recruiting</li>
-      <li>SPSS / R / Excel</li>
-      <li>Project Management</li>
-      <li>Coaching</li>
+      <li>R / SPSS / Excel</li>
+      <li>Leadership</li>
+      <li>Process Optimization</li>
       <li>Diversity & Inclusion</li>
     </ul>
   </section>
 
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h2>Get in Touch</h2>
-    <p>Email me: <a href="mailto:dumitru.valentin.bragau@gmail.com">dumitru.valentin.bragau@gmail.com</a></p>
+  <!-- Contact -->
+  <section class="contact fade-in" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:dumitru.valentin.bragau@gmail.com">dumitru.valentin.bragau@gmail.com</a></p>
     <form id="contactForm" action="https://formspree.io/f/yourID" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
@@ -91,6 +95,9 @@
     </form>
   </section>
 
-  <script src="script.js"></script>
+  <footer>
+    <button onclick="scrollToTop()" class="back-to-top">↑ Back to Top</button>
+  </footer>
 </body>
 </html>
+
